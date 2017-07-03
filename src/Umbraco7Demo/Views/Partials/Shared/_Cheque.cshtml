@@ -1,0 +1,23 @@
+﻿@using Umbraco7Demo.Core
+@model ICheque
+
+@DisplayCheque(Model)
+
+@helper DisplayCheque(ICheque cheque)
+{
+    <dl class="dl-horizontal">
+        <dt>Name</dt>
+        <dd>@cheque.ChequeName</dd>
+        <dt>Amount</dt>
+        <dd>$@cheque.ChequeAmount.ToString("0.00")</dd>
+        <dt>Date</dt>
+        <dd>@cheque.ChequeDate.ToLongDateString()</dd>
+        <dt>Pay</dt>
+        <dd>@CurrencyHelper.AmountToText(cheque.ChequeAmount).ToUpper()</dd>
+    </dl>
+}
+
+@if (Request.UrlReferrer != null)
+{
+    <a class="bottomNav" onclick="history.go(-1); return false;" href="#">Back</a><br />
+}

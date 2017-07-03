@@ -1,0 +1,31 @@
+﻿@using Umbraco7Demo.Core
+
+@model IEnumerable<ICheque>
+
+@DisplayCheques(Model)
+
+@helper DisplayCheques(IEnumerable<ICheque> cheques)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in cheques)
+            {
+                <tr>
+                    <td>@item.ChequeName</td>
+                    <td>$@item.ChequeAmount.ToString("0.00")</td>
+                    <td>@item.ChequeDate.ToString("yyyy-MM-dd")</td>
+
+                    <td><a href="@((item as Zoombraco.Models.Page).Url)">View</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
