@@ -9,5 +9,6 @@ How to run project locally:
 
 Login credentials:
 
-u: markg
-p: password
+user: markg
+
+pass: password
