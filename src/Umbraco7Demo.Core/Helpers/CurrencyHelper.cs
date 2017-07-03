@@ -15,11 +15,11 @@ namespace Umbraco7Demo.Core
 
             if (decimalNumber > 0)
             {
-                formatText = $"{wholeNumber.ToWords()} dollars and {decimalNumber.ToWords()} cents only";
+                formatText = $"{wholeNumber.ToWords()} dollars and {decimalNumber.ToWords()} cents";
             }
             else
             {
-                formatText = $"{wholeNumber.ToWords()} dollars only";
+                formatText = $"{wholeNumber.ToWords()} dollars";
             }
 
             return formatText;

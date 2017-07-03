@@ -8,10 +8,10 @@
     <dl class="dl-horizontal">
         <dt>Name</dt>
         <dd>@cheque.ChequeName</dd>
+        <dt>Date</dt>
+        <dd>@cheque.ChequeDate.ToString("yyyy-MM-dd")</dd>
         <dt>Amount</dt>
         <dd>@cheque.ChequeAmount.ToString("C")</dd>
-        <dt>Date</dt>
-        <dd>@cheque.ChequeDate.ToLongDateString()</dd>
         <dt>Pay</dt>
         <dd>@CurrencyHelper.AmountToText(cheque.ChequeAmount).ToUpper()</dd>
     </dl>
