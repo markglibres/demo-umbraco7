@@ -20,7 +20,7 @@
             {
                 <tr>
                     <td>@item.ChequeName</td>
-                    <td>$@item.ChequeAmount.ToString("0.00")</td>
+                    <td>@item.ChequeAmount.ToString("C")</td>
                     <td>@item.ChequeDate.ToString("yyyy-MM-dd")</td>
 
                     <td><a href="@((item as Zoombraco.Models.Page).Url)">View</a></td>
