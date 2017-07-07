@@ -16,3 +16,7 @@ Login credentials:
 user: markg
 
 pass: Umbraco7Demo
+
+Demo Url: http://markg-umbraco7demo.azurewebsites.net/
+(initial load might take some time as this is a free account and no always-on option)
+
