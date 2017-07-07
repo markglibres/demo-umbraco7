@@ -15,4 +15,4 @@ Login credentials:
 
 user: markg
 
-pass: password
+pass: Umbraco7Demo
